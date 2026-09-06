@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AEGOPS | Professional Logistics - Soluciones Logísticas Integrales</title>
+    <meta name="description" content="AEGOPS ofrece soluciones logísticas integrales para importación y exportación. Flete aéreo, marítimo, terrestre, aduanas y consolidado con tracking en tiempo real.">
+    <meta name="keywords" content="logística, flete aéreo, flete marítimo, transporte terrestre, aduanas, importación, exportación, tracking de carga, consolidado, AEGOPS">
+    <meta name="author" content="AEGOPS">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://aegops.com/">
+    <link rel="alternate" hreflang="es" href="https://aegops.com/">
+    <link rel="alternate" hreflang="en" href="https://aegops.com/en">
+    <link rel="alternate" hreflang="pt" href="https://aegops.com/pt">
+    <link rel="alternate" hreflang="fr" href="https://aegops.com/fr">
+    <link rel="alternate" hreflang="de" href="https://aegops.com/de">
+    <link rel="alternate" hreflang="zh" href="https://aegops.com/zh">
+    <link rel="alternate" hreflang="ko" href="https://aegops.com/ko">
+    <link rel="alternate" hreflang="x-default" href="https://aegops.com/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aegops.com/">
+    <meta property="og:title" content="AEGOPS | Professional Logistics">
+    <meta property="og:description" content="Soluciones logísticas integrales para importación y exportación. Flete aéreo, marítimo, terrestre y aduanas con tracking en tiempo real.">
+    <meta property="og:image" content="https://aegops.com/foto/logo.png">
+    <meta property="og:locale" content="es_ES">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://aegops.com/">
+    <meta name="twitter:title" content="AEGOPS | Professional Logistics">
+    <meta name="twitter:description" content="Soluciones logísticas integrales para importación y exportación. Flete aéreo, marítimo, terrestre y aduanas con tracking en tiempo real.">
+    <meta name="twitter:image" content="https://aegops.com/foto/logo.png">
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#d97706">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/css/flag-icons.min.css">
+    <link rel="stylesheet" href="css/estilos-generales.css">
+    <link rel="stylesheet" href="css/estilos-paneles.css">
+    <link rel="stylesheet" href="css/estilos-admin.css">
+    <link rel="stylesheet" href="css/fondos.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚢</text></svg>">
+</head>
+<body>
+
+<!-- Skip Navigation Link for Accessibility -->
+<a href="#main-content" class="skip-link" style="position:absolute; top:-40px; left:0; background:#d97706; color:white; padding:8px; z-index:100000; transition:top 0.3s;">Saltar al contenido principal</a>
+<script>
+document.querySelector('.skip-link').addEventListener('focus', function() { this.style.top = '0'; });
+document.querySelector('.skip-link').addEventListener('blur', function() { this.style.top = '-40px'; });
+</script>
+
+<!-- Selector de Idioma Dropdown -->
+<div class="dropdown-idioma">
+    <button type="button" class="btn-idioma-actual" onclick="var m=document.getElementById('menu-idiomas'); m.style.display = m.style.display==='block' ? 'none' : 'block';" style="display: flex; align-items: center; gap: 8px;">
+        <img id="bandera-actual" src="https://flagcdn.com/w20/es.png" style="width: 20px; height: 15px;"> <span id="texto-idioma-actual">ES</span> ▼
+    </button>
+    <div id="menu-idiomas" class="dropdown-contenido" style="display: none; position: absolute; right: 0; background-color: #111; min-width: 160px; box-shadow: 0px 8px 16px rgba(0,0,0,0.8); z-index: 9999; border-radius: 5px; border: 1px solid #333;">
+        <a href="#" onclick="seleccionarIdioma('es', 'es', 'ES'); return false;" style="color: white; padding: 10px 16px; text-decoration: none; display: flex; align-items: center; gap: 10px; font-size: 14px;"><img src="https://flagcdn.com/w20/es.png" style="width: 20px; height: 15px;"> Español</a>
+        <a href="#" onclick="seleccionarIdioma('en', 'us', 'EN'); return false;" style="color: white; padding: 10px 16px; text-decoration: none; display: flex; align-items: center; gap: 10px; font-size: 14px;"><img src="https://flagcdn.com/w20/us.png" style="width: 20px; height: 15px;"> English</a>
+        <a href="#" onclick="seleccionarIdioma('fr', 'fr', 'FR'); return false;" style="color: white; padding: 10px 16px; text-decoration: none; display: flex; align-items: center; gap: 10px; font-size: 14px;"><img src="https://flagcdn.com/w20/fr.png" style="width: 20px; height: 15px;"> Français</a>
+        <a href="#" onclick="seleccionarIdioma('pt', 'br', 'PT'); return false;" style="color: white; padding: 10px 16px; text-decoration: none; display: flex; align-items: center; gap: 10px; font-size: 14px;"><img src="https://flagcdn.com/w20/br.png" style="width: 20px; height: 15px;"> Português</a>
+        <a href="#" onclick="seleccionarIdioma('de', 'de', 'DE'); return false;" style="color: white; padding: 10px 16px; text-decoration: none; display: flex; align-items: center; gap: 10px; font-size: 14px;"><img src="https://flagcdn.com/w20/de.png" style="width: 20px; height: 15px;"> Deutsch</a>
+        <a href="#" onclick="seleccionarIdioma('zh', 'cn', 'ZH'); return false;" style="color: white; padding: 10px 16px; text-decoration: none; display: flex; align-items: center; gap: 10px; font-size: 14px;"><img src="https://flagcdn.com/w20/cn.png" style="width: 20px; height: 15px;"> 中文</a>
+        <a href="#" onclick="seleccionarIdioma('ko', 'kr', 'KO'); return false;" style="color: white; padding: 10px 16px; text-decoration: none; display: flex; align-items: center; gap: 10px; font-size: 14px;"><img src="https://flagcdn.com/w20/kr.png" style="width: 20px; height: 15px;"> 한국어</a>
+    </div>
+</div>
+
+<div class="logo-derecha">
+    <img src="foto/logo.png" alt="Logo AEGOPS - Soluciones Logísticas Internacionales">
+</div>
+
+<a href="https://wa.me/584126103444" class="whatsapp-fixed" target="_blank" aria-label="Contactar por WhatsApp">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.webp" alt="Contactar por WhatsApp">
+</a>
+
+<nav class="nav-bar" id="menu-principal-nav" style="display: none;">
+    <ul class="nav-main">
+        <li class="nav-item">
+            <a href="#" class="nav-link" onclick="volverAlInicio(); return false;" data-i18n="INICIO" aria-label="Ir al inicio">INICIO</a>
+        </li>
+        <li class="nav-item">
+            <a href="admin/" class="nav-link" data-i18n="CORRESPONSALES" aria-label="Acceso corresponsales">CORRESPONSALES</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link" data-i18n="NOSOTROS">NOSOTROS</a>
+            <div class="submenu"><ul class="sub-list">
+                <li><a href="#" onclick="mostrarContenido('quienes'); return false;" data-i18n="Quiénes Somos">Quiénes Somos</a></li>
+                <li><a href="#" onclick="mostrarContenido('mision'); return false;" data-i18n="Misión">Misión</a></li>
+                <li><a href="#" onclick="mostrarContenido('vision'); return false;" data-i18n="Visión">Visión</a></li>
+                <li><a href="#" onclick="mostrarContenido('valores'); return false;" data-i18n="Valores">Valores</a></li>
+            </ul></div>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link" data-i18n="SERVICIOS">SERVICIOS</a>
+            <div class="submenu">
+                <ul class="sub-list">
+                    <li><a href="#" onclick="mostrarServicio('aereo'); return false;" data-i18n="Carga Aérea">Carga Aérea</a></li>
+                    <li><a href="#" onclick="mostrarServicio('maritimo'); return false;" data-i18n="Carga Marítima">Carga Marítima</a></li>
+                    <li><a href="#" onclick="mostrarServicio('terrestre'); return false;" data-i18n="Carga Terrestre">Carga Terrestre</a></li>
+                    <li><a href="#" onclick="mostrarServicio('aduana'); return false;" data-i18n="Aduanas">Aduanas</a></li>
+                    <li><a href="#" onclick="mostrarServicio('consolidado'); return false;" data-i18n="Consolidado">Consolidado</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item"><a href="#" class="nav-link" onclick="mostrarTracking(); return false;" data-i18n="TRACKING" aria-label="Abrir tracking de carga">TRACKING</a></li>
+        <li class="nav-item"><a href="#" class="nav-link" onclick="mostrarContactoProfesional(); return false;" data-i18n="CONTACTO" aria-label="Abrir contacto profesional">CONTACTO</a></li>
+    </ul>
+</nav>
+
+<main id="main-content">
+    <!-- Video Principal -->
+    <div id="video-container">
+        <video id="video-fondo" autoplay muted loop playsinline loading="lazy"><source src="foto/principal.mp4" type="video/mp4"></video>
+        <div class="overlay-texto">
+            <h1 data-i18n="Soluciones Logísticas Integrales">Soluciones Logísticas Integrales</h1>
+            <p data-i18n="Optimiza tus operaciones de importación y exportación">Optimiza tus operaciones de importación y exportación</p>
+        </div>
+    </div>
+
+    <!-- Contenedor Dinámico (Servicios y Nosotros) -->
+    <div id="contenido-dinamico" style="display: none;"></div>
+
+    <!-- Panel Contacto Profesional -->
+    <div id="panel-contacto-profesional" class="panel-overlay panel-contacto-fullscreen" style="display: none;">
+        <button onclick="volverAlInicio()" class="btn-volver-contacto-esquina" data-i18n="← VOLVER AL INICIO" aria-label="Volver al inicio">← VOLVER AL INICIO</button>
+
+        <div class="tarjeta-contacto-central">
+            <div class="tarjeta-contenido tarjeta-contenido-completo">
+                <h2 data-i18n="Canales Directos">CANALES DIRECTOS</h2>
+                <ul class="lista-correos">
+                    <li><strong data-i18n="Logística:">Logística:</strong> <a href="mailto:logistica@aegops.com">logistica@aegops.com</a></li>
+                    <li><strong data-i18n="Información General:">Información General:</strong> <a href="mailto:info@aegops.com">info@aegops.com</a></li>
+                    <li><strong data-i18n="Seguimiento de Carga:">Seguimiento de Carga:</strong> <a href="mailto:seguimiento@aegops.com">seguimiento@aegops.com</a></li>
+                    <li><strong data-i18n="Coordinación Operativa:">Coordinación Operativa:</strong> <a href="mailto:coordinacion@aegops.com">coordinacion@aegops.com</a></li>
+                    <li><strong data-i18n="Documentación Aduanal:">Documentación Aduanal:</strong> <a href="mailto:documentacion@aegops.com">documentacion@aegops.com</a></li>
+                    <li><strong data-i18n="Administración:">Administración:</strong> <a href="mailto:administracion@aegops.com">administracion@aegops.com</a></li>
+                </ul>
+                <p class="contacto-nota" data-i18n="Disponibilidad 24/7 para seguimiento de carga.">Disponibilidad 24/7 para seguimiento de carga.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Panel Formulario Presupuesto -->
+    <div id="panel-formulario-presupuesto" class="panel-overlay" style="display: none;">
+        <div class="panel-box panel-box-grande">
+            <button onclick="volverAlInicio()" class="btn-volver-presupuesto" data-i18n="← VOLVER AL INICIO" aria-label="Volver al inicio">← VOLVER AL INICIO</button>
+
+            <h2 style="color:#ffcc00; margin-top:40px;" data-i18n="Solicitud de Información / Cotización">Solicitud de Información / Cotización</h2>
+
+            <form id="formulario-presupuesto" action="api/presupuesto.php" method="POST" onsubmit="enviarPresupuesto(event)">
+                <div class="form-row-2">
+                    <div class="form-campo">
+                        <label data-i18n="Tipo de Servicio">Tipo de Servicio *</label>
+                        <select id="campo-tipo-servicio" name="tipo_servicio" required>
+                            <option value="aereo" data-i18n="AÉREO">AÉREO</option>
+                            <option value="maritimo" data-i18n="MARÍTIMO">MARÍTIMO</option>
+                            <option value="terrestre" data-i18n="TERRESTRE">TERRESTRE</option>
+                            <option value="aduana" data-i18n="ADUANA">ADUANA</option>
+                            <option value="consolidado" data-i18n="CONSOLIDADO">CONSOLIDADO</option>
+                        </select>
+                    </div>
+                    <div class="form-campo">
+                        <label data-i18n="Agenciamiento Aduanal">Agenciamiento Aduanal</label>
+                        <select id="campo-agenciamiento" name="agenciamiento_aduanal">
+                            <option value="no" data-i18n="No requiere">No requiere</option>
+                            <option value="importacion" data-i18n="Importación">Importación</option>
+                            <option value="exportacion" data-i18n="Exportación">Exportación</option>
+                            <option value="ambos" data-i18n="Ambos">Ambos (Tránsito)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row-2">
+                    <div class="form-campo">
+                        <label data-i18n="Origen">Origen (Puerto/Aeropuerto) *</label>
+                        <input type="text" name="origen" data-i18n-placeholder="Ej: Miami (MIA)" placeholder="Ej: Miami (MIA)" required>
+                    </div>
+                    <div class="form-campo">
+                        <label data-i18n="Destino">Destino (Puerto/Aeropuerto) *</label>
+                        <input type="text" name="destino" data-i18n-placeholder="Ej: Caracas (CCS)" placeholder="Ej: Caracas (CCS)" required>
+                    </div>
+                </div>
+
+                <div class="form-row-3">
+                    <div class="form-campo">
+                        <label data-i18n="Tipo de Carga">Tipo de Carga *</label>
+                        <select name="tipo_carga" required>
+                            <option value="general" data-i18n="Carga General">Carga General</option>
+                            <option value="peligrosa" data-i18n="Mercancía Peligrosa">Mercancía Peligrosa</option>
+                            <option value="perecedera" data-i18n="Perecedera">Perecedera</option>
+                            <option value="valiosa" data-i18n="Alto Valor">Alto Valor</option>
+                        </select>
+                    </div>
+                    <div class="form-campo">
+                        <label>Peso Total (kg) *</label>
+                        <input type="number" name="peso" step="0.1" required>
+                    </div>
+                    <div class="form-campo">
+                        <label>Dimensiones (LxAnxAl cm)</label>
+                        <input type="text" name="dimensiones" placeholder="120x80x100">
+                    </div>
+                </div>
+
+                <div class="form-row-2">
+                    <div class="form-campo">
+                        <label data-i18n="Empresa">Empresa *</label>
+                        <input type="text" name="empresa" data-i18n-placeholder="Nombre de su compañía" placeholder="Nombre de su compañía" required>
+                    </div>
+                    <div class="form-campo">
+                        <label data-i18n="Correo Electrónico">Correo Electrónico *</label>
+                        <input type="email" name="email" data-i18n-placeholder="email@empresa.com" placeholder="email@empresa.com" required>
+                    </div>
+                </div>
+
+                <div class="form-campo">
+                    <label data-i18n="Mensaje / Detalles de Carga">Mensaje / Detalles de Carga</label>
+                    <textarea name="mensaje" rows="3" data-i18n-placeholder="Describa su necesidad logística o consulta..." placeholder="Describa su necesidad logística o consulta..."></textarea>
+                </div>
+
+                <div class="form-campo" style="display: flex; align-items: center; gap: 10px;">
+                    <input type="checkbox" id="acepto-privacidad" required style="width: auto; transform: scale(1.2);">
+                    <label for="acepto-privacidad" style="font-size: 12px; color: #fef3c7; text-align: left; cursor: pointer;">
+                    He leído y acepto la <a href="privacidad.html" target="_blank" rel="noopener" style="color: #38bdf8; text-decoration: underline;">Política de Privacidad</a>.
+                    </label>
+                </div>
+
+                <button type="submit" class="btn-principal" style="margin-top: 15px;" data-i18n="ENVIAR SOLICITUD">ENVIAR SOLICITUD</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Panel Tracking -->
+    <div id="panel-tracking-publico" class="panel-overlay" style="display: none;">
+        <div class="tracking-topbar">
+            <button onclick="volverAlInicio()" class="btn-volver-contenido" data-i18n="← VOLVER AL INICIO" aria-label="Volver al inicio">← VOLVER AL INICIO</button>
+            <button id="btnCerrarSesionTracking" onclick="cerrarSesion()" class="btn-cerrar-sesion" style="display:none;" data-i18n="Cerrar Sesión" aria-label="Cerrar sesión">Cerrar Sesión</button>
+        </div>
+        <div class="panel-box panel-tracking-moderno">
+
+            <div class="tracking-header">
+                <h2 data-i18n="Rastreo de Envíos: Control y Transparencia en Tiempo Real">Rastreo de Envíos: Control y Transparencia en Tiempo Real</h2>
+                <p data-i18n="La visibilidad total de tu carga es nuestra prioridad. Sigue el camino de tu éxito, paso a paso.">La visibilidad total de tu carga es nuestra prioridad. Sigue el camino de tu éxito, paso a paso.</p>
+            </div>
+
+            <div class="tracking-search-box">
+                <label data-i18n="Ingrese su número de guía o contenedor">Ingrese su número de guía o contenedor</label>
+                <div class="input-group">
+                    <input type="text" id="tracking-publico-guia" data-i18n-placeholder="Ej: AEG-2024-00123" placeholder="Ej: AEG-2024-00123">
+                    <button onclick="consultarTrackingPublico()" class="btn-track-search" data-i18n="RASTREAR CARGA">🔍 RASTREAR CARGA</button>
+                </div>
+            </div>
+
+            <div class="tracking-info-text">
+                <p data-i18n="Sabemos que en el comercio internacional...">Sabemos que en el comercio internacional, la información es poder. Por eso, ponemos a tu disposición nuestra avanzada herramienta de seguimiento de carga, diseñada para ofrecerte actualizaciones precisas desde el origen hasta el destino final. Acceda en cualquier momento a estados de tránsito, ubicación exacta y fechas estimadas de llegada con total seguridad.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="panel-tracking-resultado-publico" class="panel-overlay" style="display: none;"></div>
+    
+    <!-- Modal 2FA Activación Menú Admin (Ctrl + B / Esc) -->
+    <div id="modal-otp-admin" class="panel-overlay" style="display: none; z-index: 100000;">
+        <div class="panel-box" style="border: 2px solid #d97706; max-width: 420px; background: rgba(15, 23, 42, 0.96); box-shadow: 0 10px 40px rgba(0,0,0,0.8);">
+            <h2 style="color: #38bdf8; font-size: 1.4rem; margin-bottom: 10px;">🔐 ACCESO ADMINISTRATIVO</h2>
+            <p style="color: #fef3c7; font-size: 0.9rem; margin-bottom: 15px; line-height: 1.4;">
+                Se ha generado un código numérico enviado a su correo/teléfono registrado. Ingréselo para desbloquear el menú.
+            </p>
+            <div id="otp-mensaje-estado" style="display:none; padding: 10px; border-radius: 8px; margin-bottom: 15px; font-size: 0.85rem; font-weight: 500;"></div>
+            <div style="margin-bottom: 20px;">
+                <input type="text" id="input-codigo-otp" maxlength="6" placeholder="000000" autocomplete="one-time-code" style="letter-spacing: 8px; font-size: 2rem; text-align: center; font-weight: bold; padding: 10px; background: rgba(255,255,255,0.08); border: 2px solid #38bdf8; border-radius: 10px; color: #fff; width: 100%;">
+            </div>
+            <div style="display: flex; gap: 10px; justify-content: center;">
+                <button type="button" onclick="desactivarMenuAdmin()" class="btn-secundario" style="flex: 1; padding: 12px; font-size: 0.85rem;">CANCELAR (ESC)</button>
+                <button type="button" id="btn-verificar-otp" onclick="verificarCodigoOTP()" class="btn-principal" style="flex: 1; padding: 12px; font-size: 0.85rem;">VALIDAR</button>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Capas de Servicios (Fondos) -->
+<div id="capas-servicios">
+    <div id="servicio-aereo" class="capa-servicio"></div>
+    <div id="servicio-maritimo" class="capa-servicio"></div>
+    <div id="servicio-terrestre" class="capa-servicio"></div>
+    <div id="servicio-aduana" class="capa-servicio"></div>
+    <div id="servicio-consolidado" class="capa-servicio"></div>
+</div>
+
+<!-- Script de Cookies (GDPR) -->
+<div id="cookie-banner" style="position: fixed; bottom: 0; left: 0; width: 100%; background: rgba(15, 23, 42, 0.95); color: #fef3c7; padding: 15px; text-align: center; z-index: 10000; border-top: 2px solid #38bdf8; display: none; pointer-events: auto;">
+    <span data-i18n="cookie_text">Utilizamos cookies para mejorar tu experiencia. Al continuar navegando, aceptas nuestra</span>
+    <a href="cookies.html" style="color: #38bdf8;" data-i18n="cookie_link">Política de Cookies</a>.
+    <button onclick="aceptarCookies()" style="background: #d97706; border: none; color: white; padding: 8px 20px; margin-left: 15px; cursor: pointer; border-radius: 5px; font-weight: bold;" data-i18n="cookie_btn">ACEPTAR</button>
+</div>
+
+<script>
+    if (!localStorage.getItem('cookies_aceptadas')) {
+        document.getElementById('cookie-banner').style.display = 'block';
+    }
+    function aceptarCookies() {
+        localStorage.setItem('cookies_aceptadas', 'true');
+        document.getElementById('cookie-banner').style.display = 'none';
+    }
+</script>
+
+<!-- Footer Legal -->
+<footer style="background: rgba(15, 23, 42, 0.9); padding: 20px; text-align: center; border-top: 1px solid #38bdf8; position: fixed; bottom: 0; width: 100%; z-index: 100;">
+    <p style="margin: 0; color: #94a3b8; font-size: 12px;">
+        © 2024 AEGOPS. Todos los derechos reservados. |
+        <a href="privacidad.html" style="color: #38bdf8; text-decoration: none;" data-i18n="Política de Privacidad">Política de Privacidad</a> |
+        <a href="terminos.html" style="color: #38bdf8; text-decoration: none;" data-i18n="Términos y Condiciones">Términos y Condiciones</a>
+    </p>
+</footer>
+
+<script src="js/lang/es.js"></script>
+<script src="js/lang/en.js"></script>
+<script src="js/lang/pt.js"></script>
+<script src="js/lang/fr.js"></script>
+<script src="js/lang/de.js"></script>
+<script src="js/lang/zh.js"></script>
+<script src="js/lang/ko.js"></script>
+<script src="js/logic-translations.js"></script>
+<script src="js/logic-main.js"></script>
+<script src="js/tracking.js"></script>
+</body>
+</html>

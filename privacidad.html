@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad - AEGOPS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/css/flag-icons.min.css">
+    <link rel="stylesheet" href="css/estilos-generales.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            height: 100%;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background: #0f172a; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .contenedor-legal { 
+            width: 98vw;
+            height: 98vh;
+            margin: 0 auto;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .tarjeta-legal { 
+            background: rgba(30, 41, 59, 0.95); 
+            padding: 20px 25px; 
+            border-radius: 15px; 
+            border: 1px solid #38bdf8; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            width: 100%;
+            height: 100%;
+            overflow-y: auto;
+        }
+        .tarjeta-legal::-webkit-scrollbar {
+            width: 6px;
+        }
+        .tarjeta-legal::-webkit-scrollbar-track {
+            background: #1e293b;
+            border-radius: 10px;
+        }
+        .tarjeta-legal::-webkit-scrollbar-thumb {
+            background: #d97706;
+            border-radius: 10px;
+        }
+        h1 { 
+            color: #38bdf8; 
+            border-bottom: 2px solid #d97706; 
+            padding-bottom: 8px; 
+            margin-bottom: 15px; 
+            text-align: center;
+            font-size: 1.6rem;
+        }
+        h3 {
+            color: #d97706;
+            font-size: 1.2rem;
+            margin-top: 12px;
+            margin-bottom: 6px;
+        }
+        .columnas-wrapper {
+            column-count: 3;
+            column-gap: 25px;
+            column-rule: 1px solid #38bdf8;
+            height: calc(100% - 120px);
+        }
+        p, li { 
+            line-height: 1.4; 
+            margin-bottom: 8px; 
+            text-align: justify; 
+            color: #fef3c7; 
+            font-size: 0.8rem; 
+        }
+        ul { list-style-type: disc; margin-left: 20px; }
+        .volver-btn { 
+            display: block; 
+            margin-top: 5px; 
+            color: #38bdf8; 
+            text-decoration: none; 
+            font-weight: bold; 
+            text-align: center;
+            font-size: 0.95rem;
+        }
+        .volver-btn:hover { text-decoration: underline; }
+        @media (max-width: 900px) {
+            .columnas-wrapper { column-count: 2; }
+        }
+        @media (max-width: 600px) {
+            .columnas-wrapper { column-count: 1; }
+        }
+    </style>
+    
+    <script src="js/lang/es.js" defer></script>
+    <script src="js/lang/en.js" defer></script>
+    <script src="js/lang/pt.js" defer></script>
+    <script src="js/lang/fr.js" defer></script>
+    <script src="js/lang/de.js" defer></script>
+    <script src="js/lang/zh.js" defer></script>
+    <script src="js/lang/ko.js" defer></script>
+    <script src="js/logic-translations.js" defer></script>
+</head>
+<body>
+
+    <div class="banderas-fijas" style="top: 10px; right: 15px; position: fixed; z-index: 1100;">
+        <button class="bandera-btn" onclick="cambiarIdioma('es')"><span class="fi fi-es"></span></button>
+        <button class="bandera-btn" onclick="cambiarIdioma('en')"><span class="fi fi-us"></span></button>
+        <button class="bandera-btn" onclick="cambiarIdioma('pt')"><span class="fi fi-br"></span></button>
+        <button class="bandera-btn" onclick="cambiarIdioma('fr')"><span class="fi fi-fr"></span></button>
+        <button class="bandera-btn" onclick="cambiarIdioma('de')"><span class="fi fi-de"></span></button>
+        <button class="bandera-btn" onclick="cambiarIdioma('zh')"><span class="fi fi-cn"></span></button>
+        <button class="bandera-btn" onclick="cambiarIdioma('ko')"><span class="fi fi-kr"></span></button>
+    </div>
+
+    <div class="contenedor-legal">
+        <div class="tarjeta-legal">
+            <h1 data-i18n="priv_titulo">POLÍTICA DE PRIVACIDAD Y PROTECCIÓN DE DATOS</h1>
+            <p style="text-align: center; font-size: 0.8rem;"><strong data-i18n="priv_fecha">Última actualización: 30 de abril de 2026</strong></p>
+
+            <div class="columnas-wrapper">
+                <h3 data-i18n="priv_h2_1">I. POLÍTICA DE PRIVACIDAD</h3>
+                <p data-i18n="priv_intro">En AEGOPS, protegemos su información conforme a la Constitución de la República Bolivariana de Venezuela (Art. 60) y los estándares internacionales del RGPD/GDPR.</p>
+                <p><strong data-i18n="priv_responsable_label">Responsable:</strong> <span data-i18n="priv_responsable">AEGOPS. Contacto: datos@aegops.com.</span></p>
+                <p><strong data-i18n="priv_datos_label">Datos Recopilados:</strong> <span data-i18n="priv_datos">Identificación (Cédula/RIF), contacto, datos de carga (facturas, guías) y navegación técnica para tracking.</span></p>
+                <p><strong data-i18n="priv_finalidad_label">Finalidad:</strong> <span data-i18n="priv_finalidad">Gestión de fletes, trámites aduanales ante el SENIAT y seguridad logística.</span></p>
+                <p><strong data-i18n="priv_transferencias_label">Transferencias:</strong> <span data-i18n="priv_transferencias">Los datos se comparten con navieras, aerolíneas, agentes de aduana y autoridades gubernamentales en origen y destino. No vendemos datos a terceros.</span></p>
+                <p><strong data-i18n="priv_conservacion_label">Conservación:</strong> <span data-i18n="priv_conservacion">Por Ley de Aduanas, los documentos se conservan entre 5 y 10 años.</span></p>
+                <p><strong data-i18n="priv_derechos_label">Derechos:</strong> <span data-i18n="priv_derechos">Puede acceder, corregir o solicitar la supresión de sus datos escribiendo a datos@aegops.com.</span></p>
+
+                <h3 data-i18n="priv_h2_2">II. TÉRMINOS Y CONDICIONES DE SERVICIO</h3>
+                <p data-i18n="priv_term_intro">Al contratar a AEGOPS, el Cliente acepta los siguientes términos:</p>
+                <p data-i18n="priv_term_1"><strong>1. Ámbito del Servicio:</strong> AEGOPS actúa como operador logístico multimodal. Nos reservamos el derecho de rechazar cargas que pongan en riesgo la seguridad o vulneren leyes internacionales.</p>
+                <p data-i18n="priv_term_2"><strong>2. Responsabilidades del Cliente:</strong></p>
+                <p data-i18n="priv_term_2a"><strong>Embalaje:</strong> Debe ser apto para transporte internacional. AEGOPS no responde por daños por embalaje deficiente.</p>
+                <p data-i18n="priv_term_2b"><strong>Documentación:</strong> El Cliente garantiza que la información de facturas y pesos es veraz. Multas por datos falsos son responsabilidad del Cliente.</p>
+                <p data-i18n="priv_term_3"><strong>3. Mercancías Peligrosas, Prohibidas y Antidrogas:</strong></p>
+                <p data-i18n="priv_term_3a"><strong>Declaración Obligatoria:</strong> El Cliente DEBE declarar carga inflamable, química o peligrosa (IMO/IATA) y entregar la Hoja de Seguridad (MSDS).</p>
+                <p data-i18n="priv_term_3b"><strong>Sustancias Ilícitas:</strong> Queda prohibido el envío de drogas o precursores. AEGOPS colaborará con la GNB y autoridades ante cualquier hallazgo. El Cliente asume toda responsabilidad penal y civil, manteniendo a AEGOPS indemne.</p>
+                <p data-i18n="priv_term_4"><strong>4. Limitación de Responsabilidad:</strong> No respondemos por retrasos de terceros (puertos, aduanas, clima). Nuestra responsabilidad se limita al valor del flete facturado. No respondemos por lucro cesante.</p>
+                <p data-i18n="priv_term_5"><strong>5. Seguros:</strong> La carga NO está asegurada salvo solicitud expresa y pago de prima. Sin seguro, la mercancía viaja por cuenta y riesgo del Cliente.</p>
+                <p data-i18n="priv_term_6"><strong>6. Vigencia de Cotizaciones:</strong> Validez de 7 días naturales. Precios sujetos a cambios por fletes internacionales o combustible.</p>
+                <p data-i18n="priv_term_7"><strong>7. Derecho de Retención y Prenda Legal (Venezuela):</strong></p>
+                <p data-i18n="priv_term_7a"><strong>Ejercicio:</strong> Según Art. 122 y 148 del Código de Comercio, AEGOPS retendrá la carga y documentos hasta el pago total de facturas y gastos.</p>
+                <p data-i18n="priv_term_7b"><strong>Gastos:</strong> Almacenajes y demoras generados por la retención son cuenta del Cliente.</p>
+                <p data-i18n="priv_term_7c"><strong>Abandono:</strong> Pasados 30 días sin pago, la carga se considerará en abandono legal para su remate según la Ley Orgánica de Aduanas.</p>
+                <p data-i18n="priv_term_8"><strong>8. Pagos y Jurisdicción:</strong> Pagos según tasa oficial del BCV a la fecha de la transacción. Para disputas, las partes se someten a los tribunales de la sede principal de AEGOPS en Venezuela.</p>
+
+                <h3 data-i18n="priv_h2_3">III. AVISO LEGAL</h3>
+                <p data-i18n="priv_legal_1"><strong>Propiedad:</strong> El contenido de la plataforma AEGOPS es propiedad intelectual de la empresa.</p>
+                <p data-i18n="priv_legal_2"><strong>Uso de la Web:</strong> AEGOPS no garantiza la disponibilidad ininterrumpida del sistema de tracking por fallas técnicas ajenas.</p>
+            </div>
+
+            <a href="index.html" class="volver-btn" data-i18n="← VOLVER AL INICIO">← VOLVER AL INICIO</a>
+        </div>
+    </div>
+
+</body>
+</html>

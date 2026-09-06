@@ -1,0 +1,28 @@
+{
+  "name": "AEGOPS - Professional Logistics",
+  "short_name": "AEGOPS",
+  "description": "Soluciones logísticas integrales para importación y exportación. Flete aéreo, marítimo, terrestre y aduanas.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#d97706",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "foto/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "foto/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "logistics", "transportation"],
+  "lang": "es",
+  "dir": "ltr"
+}

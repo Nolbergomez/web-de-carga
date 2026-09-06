@@ -1,0 +1,10 @@
+# robots.txt - AEGOPS Logistics
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /uploads/
+Disallow: /test_pdfs/
+Disallow: /.env
+Disallow: /.env.*
+
+Sitemap: https://aegops.com/sitemap.xml

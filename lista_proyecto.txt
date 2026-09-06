@@ -1,0 +1,78 @@
+Listado de rutas de carpetas para el volumen Sisterma
+El número de serie del volumen es 000000BF D4E7:A1D4
+C:.
+|   .htaccess
+|   ANALISIS_MERCADO_AEGOPS.md
+|   cookies.html
+|   esquema.docx
+|   index.html
+|   lista_proyecto.txt
+|   privacidad.html
+|   sw.js
+|   terminos.html
+|   
++---.cursor
++---api
+|   |   .htaccess
+|   |   auth.php
+|   |   cargas.php
+|   |   config.php
+|   |   config_secret.example.php
+|   |   config_secret.php
+|   |   crear_admin.php
+|   |   presupuesto.php
+|   |   
+|   \---sql
+|           tokens_recuperacion.sql
+|           
++---css
+|       estilos-admin.css
+|       estilos-generales.css
+|       estilos-paneles.css
+|       fondos.css
+|       
++---foto
+|       1.jpg
+|       1777073937.png
+|       acceso.jpg
+|       aduana.jpg
+|       aereo.jpg
+|       consolidado.jpg
+|       contacto.jpg
+|       convertir.py
+|       fondoregistro.jpg
+|       logo.jpg
+|       logo.png
+|       maritimo.jpg
+|       nosotros.jpg
+|       observaciones de mejora .rtf
+|       presupuesto.jpg
+|       principal.mp4
+|       terrestre.jpg
+|       texto en codigo.rtf
+|       TEXTO PAGINA WEB.docx
+|       tracking.jpg
+|       
++---js
+|   |   de.js
+|   |   en.js
+|   |   es.js
+|   |   fr.js
+|   |   ko.js
+|   |   logic-main.js
+|   |   logic-translations.js
+|   |   logic-translations1.js
+|   |   pt.js
+|   |   tracking.js
+|   |   zh.js
+|   |   
+|   \---lang
+|           de.js
+|           en.js
+|           es.js
+|           fr.js
+|           ko.js
+|           pt.js
+|           zh.js
+|           
+\---uploads

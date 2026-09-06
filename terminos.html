@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Términos y Condiciones - AEGOPS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/css/flag-icons.min.css">
+    <link rel="stylesheet" href="css/estilos-generales.css">
+    <style>
+        /* FORZAR SCROLL Y LAYOUT */
+        html, body {
+            height: auto !important;
+            overflow: visible !important;
+            overflow-y: auto !important;
+        }
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background: #0f172a; 
+            padding-top: 80px; 
+        }
+        .contenedor-legal { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 40px; 
+            padding-bottom: 100px; 
+        }
+        .tarjeta-legal { 
+            background: rgba(30, 41, 59, 0.95); 
+            padding: 40px; 
+            border-radius: 15px; 
+            border: 1px solid #d97706; /* Color naranja para diferenciar */
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5); 
+        }
+        h1 { 
+            color: #d97706; /* Color naranja */
+            border-bottom: 2px solid #38bdf8; 
+            padding-bottom: 10px; 
+            margin-bottom: 20px; 
+            text-align: center;
+        }
+        
+        /* DOS COLUMNAS */
+        .columnas-wrapper {
+            column-count: 2; 
+            column-gap: 40px; 
+        }
+        
+        h2 { 
+            color: #38bdf8; /* Color azul para subtítulos */
+            margin-top: 20px; 
+            font-size: 1rem; 
+            break-inside: avoid; 
+        }
+        p, li { 
+            line-height: 1.5; 
+            margin-bottom: 10px; 
+            text-align: justify; 
+            color: #fef3c7; 
+            font-size: 0.85rem; 
+        }
+        ul { list-style-type: disc; margin-left: 20px; }
+        .volver-btn { display: block; margin-top: 30px; color: #38bdf8; text-decoration: none; font-weight: bold; text-align: center; }
+        .volver-btn:hover { text-decoration: underline; }
+
+        @media (max-width: 768px) {
+            .columnas-wrapper { column-count: 1; }
+        }
+    </style>
+    
+    <!-- Scripts de idioma -->
+    <script src="js/lang/es.js" defer></script>
+    <script src="js/lang/en.js" defer></script>
+    <script src="js/lang/pt.js" defer></script>
+    <script src="js/lang/fr.js" defer></script>
+    <script src="js/lang/de.js" defer></script>
+    <script src="js/lang/zh.js" defer></script>
+    <script src="js/lang/ko.js" defer></script>
+    <script src="js/logic-translations.js" defer></script>
+</head>
+<body>
+
+    <!-- Banderas -->
+    <div class="banderas-fijas" style="top: 15px; right: 20px;">
+        <button class="bandera-btn" onclick="cambiarIdioma('es')"><span class="fi fi-es"></span></button>
+        <button class="bandera-btn" onclick="cambiarIdioma('en')"><span class="fi fi-us"></span></button>
+        <button class="bandera-btn" onclick="cambiarIdioma('pt')"><span class="fi fi-br"></span></button>
+        <button class="bandera-btn" onclick="cambiarIdioma('fr')"><span class="fi fi-fr"></span></button>
+        <button class="bandera-btn" onclick="cambiarIdioma('de')"><span class="fi fi-de"></span></button>
+        <button class="bandera-btn" onclick="cambiarIdioma('zh')"><span class="fi fi-cn"></span></button>
+        <button class="bandera-btn" onclick="cambiarIdioma('ko')"><span class="fi fi-kr"></span></button>
+    </div>
+
+    <div class="contenedor-legal">
+        <div class="tarjeta-legal">
+            <h1 data-i18n="term_titulo">TÉRMINOS Y CONDICIONES DE SERVICIO</h1>
+            
+            <div class="columnas-wrapper">
+                <p data-i18n="term_intro">Al solicitar una cotización o utilizar los servicios de AEGOPS, usted acepta los siguientes términos diseñados para operaciones de logística internacional.</p>
+
+                <h2 data-i18n="term_h2_1">1. Ámbito del Servicio</h2>
+                <p data-i18n="term_p_1">AEGOPS actúa como operador logístico multimodal. Gestionamos la coordinación de transporte, trámites aduaneros y seguimiento de carga bajo las instrucciones del cliente.</p>
+
+                <h2 data-i18n="term_h2_2">2. Responsabilidades del Cliente (Importante)</h2>
+                <p data-i18n="term_p_2_intro">El cliente declara conocer y cumplir con:</p>
+                <ul>
+                    <li data-i18n="term_li_2a">Embalaje: La carga debe estar embalada correctamente para soportar el transporte internacional. AEGOPS no se responsabiliza por daños causados por embalaje deficiente o inadecuado.</li>
+                    <li data-i18n="term_li_2b">Documentación: La información proporcionada (facturas, listas de empaque) debe ser veraz. Cualquier multa o sanción por datos falsos será responsabilidad exclusiva del cliente.</li>
+                    <li data-i18n="term_li_2c">Mercancías Peligrosas: Deben declararse bajo normativas IMO/IATA. El envío no declarado exime a AEGOPS de toda responsabilidad y el cliente asumirá costos legales y operativos.</li>
+                </ul>
+
+                <h2 data-i18n="term_h2_3">3. Limitación de Responsabilidad</h2>
+                <p data-i18n="term_p_3">AEGOPS no es naviera, aerolínea ni autoridad aduanera. No nos responsabilizamos por retrasos, cancelaciones o inspecciones causadas por terceros o fuerzas mayores (huelgas, clima, cierres fronterizos). Nuestra responsabilidad se limita al deber de diligencia en la gestión.</p>
+
+                <h2 data-i18n="term_h2_4">4. Seguros y Mercancías</h2>
+                <p data-i18n="term_p_4">Los servicios cotizados no incluyen seguro de carga a menos que se solicite expresamente. Sin seguro, la mercancía viaja por cuenta y riesgo del cliente bajo los límites de responsabilidad de los transportistas (Convenios de Varsovia, La Haya, etc.).</p>
+
+                <h2 data-i18n="term_h2_5">5. Pagos y Jurisdicción</h2>
+                <p data-i18n="term_p_5">El cliente se compromete a pagar los servicios antes de la entrega o según lo pactado. Para disputas legales, las partes se someten a los tribunales de la jurisdicción donde AEGOPS tenga su sede principal, renunciando a cualquier otro fuero.</p>
+            </div>
+
+            <a href="index.html" class="volver-btn" data-i18n="← VOLVER AL INICIO">← VOLVER AL INICIO</a>
+        </div>
+    </div>
+
+</body>
+</html>

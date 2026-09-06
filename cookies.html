@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Cookies - AEGOPS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/css/flag-icons.min.css">
+    <link rel="stylesheet" href="css/estilos-generales.css">
+    
+    <!-- Scripts de idiomas -->
+    <script src="js/lang/es.js" defer></script>
+    <script src="js/lang/en.js" defer></script>
+    <script src="js/lang/pt.js" defer></script>
+    <script src="js/lang/fr.js" defer></script>
+    <script src="js/lang/de.js" defer></script>
+    <script src="js/lang/zh.js" defer></script>
+    <script src="js/lang/ko.js" defer></script>
+    <script src="js/logic-translations.js" defer></script>
+    
+    <style>
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background: #0f172a; 
+            color: #fef3c7; 
+            margin: 0; 
+            padding: 0; 
+            min-height: 100vh;
+            overflow-y: auto;
+            overflow-x: hidden;
+            display: block;
+        }
+        
+        .contenedor { 
+            max-width: 1000px; 
+            margin: 80px auto 40px auto; 
+            padding: 20px 40px; 
+            background: rgba(15, 23, 42, 0.9);
+            border-radius: 16px;
+        }
+        
+        h1 { 
+            color: #38bdf8; 
+            border-bottom: 2px solid #d97706; 
+            padding-bottom: 8px; 
+            font-size: 1.5rem; 
+            margin-bottom: 15px; 
+        }
+        
+        h2 { 
+            color: #d97706; 
+            margin-top: 20px; 
+            margin-bottom: 8px;
+            font-size: 1.1rem; 
+        }
+        
+        p { 
+            line-height: 1.5; 
+            margin-bottom: 12px; 
+            text-align: justify; 
+            font-size: 0.95rem; 
+        }
+        
+        a { 
+            color: #38bdf8; 
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        ul { 
+            margin: 8px 0 12px 0; 
+            padding-left: 25px; 
+        }
+        
+        li { 
+            font-size: 0.95rem; 
+            margin-bottom: 8px; 
+            line-height: 1.5;
+        }
+
+        .banderas-fijas { 
+            position: fixed; 
+            top: 20px; 
+            right: 20px; 
+            display: flex; 
+            gap: 10px; 
+            z-index: 1000; 
+        }
+        
+        .bandera-btn { 
+            background: #1e293b; 
+            border: 1px solid #38bdf8; 
+            border-radius: 8px; 
+            cursor: pointer; 
+            padding: 5px 8px; 
+            transition: transform 0.2s; 
+        }
+        
+        .bandera-btn:hover { 
+            transform: scale(1.1); 
+            background: #d97706; 
+        }
+        
+        .btn-volver {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 10px 20px;
+            background: #d97706;
+            color: #0f172a;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: background 0.3s;
+            text-align: center;
+        }
+        
+        .btn-volver:hover {
+            background: #ea580c;
+            text-decoration: none;
+        }
+        
+        .volver-wrapper {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Banderas de Idioma -->
+<div class="banderas-fijas">
+    <button class="bandera-btn" onclick="cambiarIdioma('es')"><span class="fi fi-es"></span></button>
+    <button class="bandera-btn" onclick="cambiarIdioma('en')"><span class="fi fi-us"></span></button>
+    <button class="bandera-btn" onclick="cambiarIdioma('pt')"><span class="fi fi-br"></span></button>
+    <button class="bandera-btn" onclick="cambiarIdioma('fr')"><span class="fi fi-fr"></span></button>
+    <button class="bandera-btn" onclick="cambiarIdioma('de')"><span class="fi fi-de"></span></button>
+    <button class="bandera-btn" onclick="cambiarIdioma('zh')"><span class="fi fi-cn"></span></button>
+    <button class="bandera-btn" onclick="cambiarIdioma('ko')"><span class="fi fi-kr"></span></button>
+</div>
+
+<div class="contenedor">
+    <h1 data-i18n="Política de Cookies">Política de Cookies</h1>
+    <p><strong data-i18n="Última actualización:">Última actualización:</strong> <span id="fecha-actual"></span></p>
+
+    <p data-i18n="Esta Política de Cookies explica qué son las cookies, cómo las utilizamos en AEGOPS, los tipos de cookies que usamos y cómo puede gestionar sus preferencias.">Esta Política de Cookies explica qué son las cookies, cómo las utilizamos en AEGOPS, los tipos de cookies que usamos y cómo puede gestionar sus preferencias.</p>
+
+    <h2 data-i18n="1. ¿Qué son las Cookies?">1. ¿Qué son las Cookies?</h2>
+    <p data-i18n="Las cookies son pequeños archivos de texto que se almacenan en su dispositivo cuando visita un sitio web. Se utilizan para recordar sus preferencias y mejorar la funcionalidad del sitio.">Las cookies son pequeños archivos de texto que se almacenan en su dispositivo cuando visita un sitio web. Se utilizan para recordar sus preferencias y mejorar la funcionalidad del sitio.</p>
+
+    <h2 data-i18n="2. Cookies que Utilizamos">2. Cookies que Utilizamos</h2>
+    <ul>
+        <li><strong data-i18n="Cookies Técnicas (Necesarias):">Cookies Técnicas (Necesarias):</strong> <span data-i18n="Permiten la navegación por el sitio y el uso de funciones básicas (como el login de operadores). No se pueden desactivar.">Permiten la navegación por el sitio y el uso de funciones básicas (como el login de operadores). No se pueden desactivar.</span></li>
+        <li><strong data-i18n="Cookies de Preferencias:">Cookies de Preferencias:</strong> <span data-i18n="Recordamos el idioma seleccionado para que no tenga que cambiar cada vez que entre.">Recordamos el idioma seleccionado para que no tenga que cambiar cada vez que entre.</span></li>
+        <li><strong data-i18n="Cookies de Análisis:">Cookies de Análisis:</strong> <span data-i18n="Nos ayudan a entender cómo interactúan los visitantes con el sitio para mejorar la experiencia.">Nos ayudan a entender cómo interactúan los visitantes con el sitio para mejorar la experiencia.</span></li>
+    </ul>
+
+    <h2 data-i18n="3. Gestión de Cookies">3. Gestión de Cookies</h2>
+    <p data-i18n="Puede aceptar o rechazar las cookies no esenciales mediante el banner que aparece al visitar nuestra web. También puede configurar su navegador para rechazar cookies, aunque esto puede afectar la funcionalidad del sitio.">Puede aceptar o rechazar las cookies no esenciales mediante el banner que aparece al visitar nuestra web. También puede configurar su navegador para rechazar cookies, aunque esto puede afectar la funcionalidad del sitio.</p>
+
+    <div class="volver-wrapper">
+        <a href="index.html" class="btn-volver" data-i18n="← Volver al Inicio">← Volver al Inicio</a>
+    </div>
+</div>
+
+<script>
+    // Mostrar fecha actual formateada
+    const hoy = new Date();
+    const opciones = { year: 'numeric', month: 'long', day: 'numeric' };
+    document.getElementById('fecha-actual').textContent = hoy.toLocaleDateString('es-ES', opciones);
+</script>
+
+</body>
+</html>
